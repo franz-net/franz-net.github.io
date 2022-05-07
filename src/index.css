@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans;',
+    'Droid Sans', 'Helvetica Nueue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 .header {
-    @apply shadow flex
+    @apply shadow flex justify-center items-center
+}
+
+.appBar {
+    @apply flex justify-center items-center my-3 mx-5
+}
+
+.footer {
+    @apply sticky top-[100vh] self-end justify-self-center text-center
 }
