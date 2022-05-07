@@ -1,10 +1,10 @@
 import React from 'react';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import {About, Contact, Layout, Projects} from "./pages";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter basename='/'>
             <Routes>
                 <Route path='/' element={<Layout/>}>
                     <Route index element={<About/>}/>
@@ -15,7 +15,7 @@ function App() {
             </Routes>
 
 
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
