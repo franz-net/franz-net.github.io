@@ -1,8 +1,10 @@
 import React from 'react';
 import {Footer, Header} from "./components";
 import {About, Contact, Projects} from "./pages";
-import {createTheme, NextUIProvider} from "@nextui-org/react";
+import {Container, createTheme, NextUIProvider} from "@nextui-org/react";
 import useDarkMode from "@fisch0920/use-dark-mode";
+
+const fonts = {}
 
 const lightTheme = createTheme({
     type: 'light',
@@ -23,7 +25,7 @@ function App() {
     const darkMode = useDarkMode(false)
     return (
         <NextUIProvider theme={darkMode.value ? darkTheme : lightTheme}>
-            <div>
+            <Container responsive>
                 <Header/>
                 <div></div>
                 <main>
@@ -32,7 +34,7 @@ function App() {
                     <Contact/>
                 </main>
                 <Footer/>
-            </div>
+            </Container>
         </NextUIProvider>
     );
 }

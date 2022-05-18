@@ -1,18 +1,24 @@
 import {ThemeSwitch} from "./index";
+import {Container, Text} from "@nextui-org/react";
 
 export default function Header() {
     return (
-        <div>
-            <div>
-                <h1>Franz <span>R.</span></h1>
-                <div>
-                    <button>About</button>
-                    <button>Projects</button>
-                    <button>Contact</button>
-                </div>
-                <ThemeSwitch/>
-            </div>
+        <Container display='flex' justify='space-between' css={{padding: 0}}>
 
-        </div>
+            <Text h1 margin='0' css={{
+                pr: 0,
+                textGradient: "45deg, $blue600 -20%, $pink600 50%",
+            }}>
+                Franz R.
+            </Text>
+            <div>
+                <button>About</button>
+                <button>Projects</button>
+                <button>Contact</button>
+            </div>
+            <ThemeSwitch/>
+
+
+        </Container>
     )
 }
