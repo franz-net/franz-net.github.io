@@ -27,7 +27,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className='min-h-screen'>
+        <div>
             <h1>PROJECTS</h1>
             {projects.map(project => {
                 return (
