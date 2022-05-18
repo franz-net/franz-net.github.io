@@ -1,12 +1,21 @@
 import React from 'react';
 import {Footer, Header} from "./components";
 import {About, Contact, Projects} from "./pages";
-import {Container, createTheme, NextUIProvider} from "@nextui-org/react";
+import {Container, createTheme, NextUIProvider, Theme} from "@nextui-org/react";
 import useDarkMode from "@fisch0920/use-dark-mode";
 
-const fonts = {}
+const fonts = {
+    quicksand: 'Quicksand, sans-serif'
+}
+
+const sharedTheme: Theme = {
+    theme: {
+        fonts
+    }
+}
 
 const lightTheme = createTheme({
+    ...sharedTheme,
     type: 'light',
     theme: {
         colors: {}
@@ -14,6 +23,7 @@ const lightTheme = createTheme({
 })
 
 const darkTheme = createTheme({
+    ...sharedTheme,
     type: 'dark',
     theme: {
         colors: {}
