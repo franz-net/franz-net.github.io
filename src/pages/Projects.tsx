@@ -6,13 +6,13 @@ const projects = [
         name: 'Smash-Studio',
         description: 'Tennis & Padel court tracker and management application',
         stack: 'MERN',
-        thumbnail: ''
+        thumbnail: 'https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/smashStudio.png'
     },
     {
         name: 'Tic-Tac-Toe',
         description: 'Retro-styled Tic Tac Toe game, with multiple 80s and 90s references and some easter eggs',
         stack: 'JavaScript, HTML, CSS',
-        thumbnail: ''
+        thumbnail: 'https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/ticTacToe.png'
     },
     {
         name: 'Hold-My-Spot',
@@ -22,9 +22,9 @@ const projects = [
     },
     {
         name: 'Laminar Tasks',
-        description: 'Group project TO-DO list',
+        description: 'Group project - Our version of a Todo list',
         stack: 'NodeJS (Express), JavaScript',
-        thumbnail: ''
+        thumbnail: 'https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/laminar.png'
     }
 ]
 

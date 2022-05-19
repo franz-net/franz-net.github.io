@@ -18,7 +18,7 @@ export default function ProjectCard({name, description, thumbnail}: any) {
                 <Card.Image
                     objectFit="cover"
                     width="100%"
-                    height={140}
+                    height={190}
                     src={thumbnail}
                     alt={name}
                 />
