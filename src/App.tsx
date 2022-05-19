@@ -5,7 +5,7 @@ import {Container, createTheme, NextUIProvider, Theme} from "@nextui-org/react";
 import useDarkMode from "@fisch0920/use-dark-mode";
 
 const fonts = {
-    quicksand: 'Quicksand, sans-serif'
+    sans: 'Quicksand, sans-serif'
 }
 
 const sharedTheme: Theme = {
@@ -18,7 +18,8 @@ const lightTheme = createTheme({
     ...sharedTheme,
     type: 'light',
     theme: {
-        colors: {}
+        colors: {},
+        ...fonts
     }
 })
 
@@ -26,13 +27,14 @@ const darkTheme = createTheme({
     ...sharedTheme,
     type: 'dark',
     theme: {
-        colors: {}
+        colors: {},
+        ...fonts
     }
 })
 
 
 function App() {
-    const darkMode = useDarkMode(false)
+    const darkMode = useDarkMode(true)
     return (
         <NextUIProvider theme={darkMode.value ? darkTheme : lightTheme}>
             <Container responsive>

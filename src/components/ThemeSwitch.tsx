@@ -2,10 +2,10 @@ import {Switch} from "@nextui-org/react";
 import useDarkMode from '@fisch0920/use-dark-mode';
 
 export default function ThemeSwitch() {
-    const darkMode = useDarkMode(false)
+    const darkMode = useDarkMode(true)
     return (
         <>
-            <Switch checked={darkMode.value} onChange={() => darkMode.toggle()}/>
+            <Switch color='error' checked={!darkMode.value} onChange={() => darkMode.toggle()}/>
         </>
     )
 }

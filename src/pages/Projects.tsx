@@ -1,3 +1,5 @@
+import {Card, Container, Grid, Text} from "@nextui-org/react";
+
 const projects = [
     {
         name: 'Smash-Studio',
@@ -27,13 +29,20 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div>
+        <Container fluid display='flex'>
             <h1>PROJECTS</h1>
-            {projects.map(project => {
-                return (
-                    project.name
-                )
-            })}
-        </div>
+            <Grid.Container gap={2}>
+                {projects.map((project: any, index: number) => {
+                    return (
+                        <Grid xs={12} md={6}>
+                            <Card key={index} clickable hoverable>
+                                <Text h3>{project.name}</Text>
+                                <Text>{project.description}</Text>
+                            </Card>
+                        </Grid>
+                    )
+                })}
+            </Grid.Container>
+        </Container>
     )
 }
