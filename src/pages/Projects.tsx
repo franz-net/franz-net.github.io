@@ -4,26 +4,26 @@ import {ProjectCard} from "../components";
 const projects = [
     {
         name: 'Smash-Studio',
-        description: 'Tennis & Padel court tracker and management application',
-        stack: 'MERN',
+        description: 'Tennis & Padel court tracker and management application. Still under active development',
+        stack: 'Built on React(Typescript) and NodeJS',
         thumbnail: 'https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/smashStudio.png'
     },
     {
         name: 'Tic-Tac-Toe',
-        description: 'Retro-styled Tic Tac Toe game, with multiple 80s and 90s references and some easter eggs',
-        stack: 'JavaScript, HTML, CSS',
+        description: 'Retro-styled Tic Tac Toe game, with multiple 80s and 90s references and some easter eggs.',
+        stack: 'Built on HTML, CSS and JavaScript',
         thumbnail: 'https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/ticTacToe.png'
     },
     {
         name: 'Hold-My-Spot',
-        description: 'Event and class reservation management system',
-        stack: 'Python (Flask)',
+        description: 'Event reservation management system. Includes a QR code for checking into events.',
+        stack: 'Built on Python(Flask) and JavaScript',
         thumbnail: "https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/holdmyspot.png"
     },
     {
         name: 'Laminar Tasks',
-        description: 'Group project - Our version of a Todo list',
-        stack: 'NodeJS (Express), JavaScript',
+        description: 'To-do task tracker. Group project using Mob Programing. ',
+        stack: 'Built on JavaScript and NodeJS',
         thumbnail: 'https://raw.githubusercontent.com/franz-net/franz-net.github.io/main/src/assets/laminar.png'
     }
 ]
