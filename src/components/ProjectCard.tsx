@@ -1,9 +1,9 @@
 import {Card, Col, Grid, Text} from "@nextui-org/react";
 
-export default function ProjectCard({name, description, stack, thumbnail}: any) {
+export default function ProjectCard({name, description, stack, thumbnail, live}: any) {
     return (
         <Grid xs={12} md={6}>
-            <Card cover clickable hoverable>
+            <Card cover clickable hoverable onClick={() => window.open(live, '_blank')}>
                 <Card.Header
                     css={{
                         position: "absolute",
@@ -28,7 +28,7 @@ export default function ProjectCard({name, description, stack, thumbnail}: any) 
                     blur
                     css={{
                         position: "absolute",
-                        bgBlur: "#fff",
+                        bgBlur: "#ffffff",
                         borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                         bottom: 0,
                         zIndex: 1,
@@ -36,7 +36,7 @@ export default function ProjectCard({name, description, stack, thumbnail}: any) 
                     }}
                 >
                     <Col>
-                        <Text>{description}</Text>
+                        <Text color="black">{description}</Text>
                     </Col>
                 </Card.Footer>
 
