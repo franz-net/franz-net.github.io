@@ -35,7 +35,7 @@ const projects = [
 export default function Projects() {
     return (
         <Container fluid display='flex'>
-            <Text h2 css={{mx: 0, my: 3}}>Projects</Text>
+            <Text h2 css={{mx: 0, my: 3}} size={60}>Projects</Text>
             <Grid.Container gap={2}>
                 {projects.map((project: any, index: number) => {
                     console.log(project.thumbnail)
