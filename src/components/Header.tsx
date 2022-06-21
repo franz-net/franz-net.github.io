@@ -14,6 +14,9 @@ export default function Header() {
                 }}>
                 Franz R.
             </Text>
+            <Text>
+                Under Construction...
+            </Text>
             {/*
             <div>
                 <Button>About</Button>
