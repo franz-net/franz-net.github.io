@@ -10,6 +10,7 @@ export default function Contact() {
                 auto
                 color="error"
                 icon={<FaGithubAlt/>}
+                onClick={() => window.open('https://github.com/franz-net', '_blank')}
             />
         </div>
     )
